@@ -4,7 +4,7 @@
 #######################################################################
 
 # Base image: https://github.com/phusion/baseimage-docker
-FROM phusion/baseimage:0.9.22
+FROM phusion/baseimage:0.10.2
 
 # Set correct environment variables
 ENV DEBIAN_FRONTEND="noninteractive"
