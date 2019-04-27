@@ -21,7 +21,7 @@ RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
 # Install Squeezelite
 RUN apt-get -qq -y update && \
     apt-get -qq -y install alsa-base alsa-utils curl && \
-	curl -o squeezelite.tar.gz -L https://sourceforge.net/projects/lmsclients/files/squeezelite/linux/squeezelite-1.8.7-1052-ubuntu-lts-x86_64.tar.gz/download	&& \
+	curl -o squeezelite.tar.gz -L https://sourceforge.net/projects/lmsclients/files/squeezelite/linux/squeezelite-1.9.1.1137-x86_64.tar.gz/download	&& \
 	tar -xvzf squeezelite.tar.gz && \
     mv squeezelite /usr/bin && \
     chmod +x /usr/bin/squeezelite && \
